@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cfcfcf;
+    border-radius: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    animation: circle 4s ease-out infinite both;
+}
+
+@keyframes circle {
+    0%,50% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    70%,100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
