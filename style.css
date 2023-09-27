@@ -1,0 +1,31 @@
+.container {
+    width: 800px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid #cfcfcf;
+    border-radius: 20px;
+}
+  
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 375px;
+    left: 375px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    animation: circle 4s ease-out infinite both;
+}
+
+@keyframes circle {
+    0%,50% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    70%,100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
